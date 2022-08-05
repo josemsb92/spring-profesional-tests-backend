@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const { sequelize } = require("./models");
 const port = process.env.PORT || 3000;
-app.use("/", require("./route"));
+app.use("/", require("./routes"));
 app.listen(port, () => {
   console.log(`Working on port ${port}`);
   try {
